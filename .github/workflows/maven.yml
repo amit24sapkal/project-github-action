@@ -2,6 +2,11 @@ name: Java CI with Maven
 on:
   workflow_dispatch:
 
+#  push:
+#   branches: ["main"]
+#  pull_request:
+#    branches: ["main"]  
+
 jobs:
   build:
     runs-on: ubuntu-latest
