@@ -1,20 +1,12 @@
 name: Java CI with Maven
 on:
-<<<<<<< HEAD
-  workflow_dispatch:
+#  workflow_dispatch:
 
-#  push:
-#   branches: ["main"]
-#  pull_request:
-#    branches: ["main"]  
-
-=======
   push:
     branches: ["main"]
   pull_request:
     branches: ["main"]  
-  
->>>>>>> 3377bef1a5401ce9b0785715d64ec1dc2582de4d
+
 jobs:
   build:
     
