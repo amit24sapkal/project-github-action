@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700">
+  <style>
+    .box { fill:#ffffff; stroke:#333333; stroke-width:2; rx:12; ry:12; }
+    .text { font:16px Arial, sans-serif; fill:#111111; }
+    .title { font:20px Arial, sans-serif; font-weight:bold; }
+    .arrow { fill:none; stroke:#333333; stroke-width:2; marker-end:url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333333" />
+    </marker>
+  </defs>
+
+  <rect x="40" y="50" width="220" height="90" class="box" />
+  <text x="150" y="85" class="title" text-anchor="middle">Browser / User</text>
+  <text x="150" y="110" class="text" text-anchor="middle">/register, /login,</text>
+  <text x="150" y="130" class="text" text-anchor="middle">/dashboard, /deposit</text>
+
+  <rect x="320" y="40" width="260" height="120" class="box" />
+  <text x="450" y="75" class="title" text-anchor="middle">BankController</text>
+  <text x="450" y="100" class="text" text-anchor="middle">Handles HTTP endpoints</text>
+  <text x="450" y="120" class="text" text-anchor="middle">and calls AccountService</text>
+
+  <rect x="620" y="40" width="260" height="120" class="box" />
+  <text x="750" y="75" class="title" text-anchor="middle">Spring Security</text>
+  <text x="750" y="100" class="text" text-anchor="middle">SecurityConfig</text>
+  <text x="750" y="120" class="text" text-anchor="middle">Authentication/Authorization</text>
+
+  <line x1="260" y1="95" x2="320" y2="95" class="arrow" />
+  <line x1="540" y1="90" x2="620" y2="60" class="arrow" />
+  <line x1="540" y1="110" x2="620" y2="130" class="arrow" />
+
+  <rect x="320" y="200" width="260" height="120" class="box" />
+  <text x="450" y="235" class="title" text-anchor="middle">AccountService</text>
+  <text x="450" y="260" class="text" text-anchor="middle">Business logic layer</text>
+  <text x="450" y="280" class="text" text-anchor="middle">register / deposit /</text>
+  <text x="450" y="300" class="text" text-anchor="middle">withdraw / transfer</text>
+
+  <line x1="450" y1="160" x2="450" y2="200" class="arrow" />
+
+  <rect x="120" y="360" width="270" height="120" class="box" />
+  <text x="255" y="395" class="title" text-anchor="middle">AccountRepository</text>
+  <text x="255" y="420" class="text" text-anchor="middle">Find by username</text>
+  <text x="255" y="440" class="text" text-anchor="middle">Save Account data</text>
+
+  <rect x="610" y="360" width="270" height="120" class="box" />
+  <text x="745" y="395" class="title" text-anchor="middle">TransactionRepository</text>
+  <text x="745" y="420" class="text" text-anchor="middle">Save transaction records</text>
+  <text x="745" y="440" class="text" text-anchor="middle">Load history by account</text>
+
+  <line x1="450" y1="260" x2="255" y2="360" class="arrow" />
+  <line x1="450" y1="260" x2="745" y2="360" class="arrow" />
+
+  <rect x="320" y="520" width="360" height="120" class="box" />
+  <text x="500" y="555" class="title" text-anchor="middle">MySQL Database</text>
+  <text x="500" y="585" class="text" text-anchor="middle">Account and Transaction tables</text>
+
+  <line x1="255" y1="480" x2="400" y2="520" class="arrow" />
+  <line x1="745" y1="480" x2="520" y2="520" class="arrow" />
+
+  <rect x="320" y="670" width="360" height="20" fill="none" />
+</svg>
